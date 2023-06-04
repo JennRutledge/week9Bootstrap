@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Using Bootstrap version 4.4.1 for this assignment,
+    used videos for week 9 to set up.-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <!-- Week 9 coding assignment, create a new website using HTML and Bootstrap.
+    Must include at lease 2 pages, Bootstrap: navbar, table and form. Bootstrap grid
+    must be used throughout to format elements. Elements must stack vertically when
+    the window is small.  -->
+</head>
+<body>
+    <!-- Used alert to verify that HTML was setup correctly.
+        Used a different statement on each page. -->
+    <!-- <div class="alert alert-primary" roles="alert">
+        page 2        
+    </div> -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+   <!-- Not including image/logo on this page, just name in header -->
+    <div class="contianer-fluid m-4">
+    <div class="row">
+        <div class="col">
+            <h1 class="text-center text-danger">Adventure Leaners</h1>
+        </div>
+        </div>
+    <div class="row">
+        <div class="col">
+            <!-- Nav bar needs work, fixed issue. Had both links set as navbar-nav instead
+            of listing the second as a navbar-item wiht nav-link. Navigation bars now look
+            like I want them to.-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-nav" href=index.html>Home</a>
+            <a class="nav-item nav-link" href=more.html>Rates & Forms</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        </div>
+        </nav>
+    </div>
+    <!-- formating this page differntly but using similar styling so it is cohesive. -->
+    <div class="row">
+        <div class="col">
+            <h5 class="bg-success text-center">Holiday Closures</h5>
+            <ul class="font-italic">
+                <li>New Year's Day</li>
+                <li>Martin Lutehr King, Jr.</li>
+                <li>President's Day</li>
+                <li>Memorial Day</li>
+                <li>Idependence Day/July 4th</li>
+                <li>Labor Day</li>
+                <li>Thanksgiving Day</li>
+                <li>Day after Thanksgiving</li>
+                <li>Christmas Eve</li>
+                <li>Christmas Day</li>
+            </ul>
+        </div>
+        <div class="col-6">
+            <h5 class="bg-warning text-center"> Weekly Menu</h5>
+            <p class="font-italic">
+                This is our basic menu. Water and milk are offered with breakfast and water at 
+                each snack and with lunch. The lunch main course is listed and we include a vegetable
+                side with every lunch. We expect everyone to take a thank you bite of all offered foods.
+                We will offer an additional food choice if there are allergies OR a strong dislike to an
+                offered food.
+            </p>
+            <!-- use a table -->
+            <div class="table-responsive">
+                <table class="table table-bordered">
+                <thead class="text-center">
+                    <tr> 
+                        <th>Monday</th>
+                        <th>Tuesday</th>
+                        <th>Wednesday</th>
+                        <th>Thursday</th>
+                        <th>Friday</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="text-center table-info">
+                        <td>breakfast</td>
+                        <td>breakfast</td>
+                        <td>breakfast</td>
+                        <td>breakfast</td>
+                        <td>breakfast</td>
+                    </tr>
+                    <tr>
+                        <td>donuts</td>
+                        <td>cereal</td>
+                        <td>muffins</td>
+                        <td>pancakes</td>
+                        <td>cereal</td>
+                    </tr>
+                    <tr class="text-center table-success">
+                        <td>snack</td>
+                        <td>snack</td>
+                        <td>snack</td>
+                        <td>snack</td>
+                        <td>snack</td>
+                    </tr>
+                    <tr>
+                        <td>goldfish</td>
+                        <td>fruit</td>
+                        <td>crackers</td>
+                        <td>fruit</td>
+                        <td>crackers</td>
+                    </tr>
+                    <tr class="text-center table-info">
+                        <td>lunch</td>
+                        <td>lunch</td>
+                        <td>lunch</td>
+                        <td>lunch</td>
+                        <td>lunch</td>
+                    </tr>
+                    <tr>
+                        <td>sandwiches</td>
+                        <td>tacos</td>
+                        <td>noodles</td>
+                        <td>pizza</td>
+                        <td>sandwiches</td>
+                    </tr>
+                    <tr class="text-center table-success">
+                        <td>snack</td>
+                        <td>snack</td>
+                        <td>snack</td>
+                        <td>snack</td>
+                        <td>snack</td>
+                    </tr>
+                    <tr>
+                        <td>fruit</td>
+                        <td>scooby snacks</td>
+                        <td>crackers</td>
+                        <td>goldfish</td>
+                        <td>yogurt</td>
+                    </tr>
+                </tbody>
+            </table> 
+        </div>
+      </div>      
+        <div class="col">
+            <h5 class="bg-success text-center">Daily Schedule</h5>
+            <!-- possible table, decided to use a list to have some uniformity -->
+            <ul>
+                <li>Arrivals  7:30 am - 9:00 am</li>
+                <li>Breakfast 8:30 am - 9:30 am</li>
+                <li>Outside/inside free play or structured activities 9:30 am</li>
+                <li>Morning snack 10:30 am</li>
+                <li>Movement activities and free play 11:00 am - 12:30 pm</li>
+                <li>Lunch 12:00 pm - 1:00 pm</li>
+                <li>Nap/quiet time 1:00 pm - 3:00 pm</li>
+                <li>Afternoon snack 3:15 - 3:30 pm</li>
+                <li>Reading/book time 3:30 -4:00 pm</li>
+                <li>Outside/inside free play 4:00 pm - 5:30 pm</li>  
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <!-- <h5 class="bg-warning text-center">Application</h5> -->
+            <!-- Need to add a link to this document when document is available -->
+            <!-- <p>Coming Soon</p> -->
+            <!-- will remove h5 and message once the actual info is linked -->
+            <a class="btn btn-warning btn-block" href="application.docx" role="button">Application</a>
+        </div>
+        <div class="col">
+            <!-- <h5 class="bg-info text-center">Handbook</h5> -->
+            <!-- Need to add a link to this document -->
+            <!-- Removed the h5 and went with just the button to click for the handbook -->
+            <a class="btn btn-info btn-block" href="adventureLearnersHandbook.pdf" role="button"> Handbook</a>
+        </div>
+        <div class="col">
+            <!-- <h5 class="bg-success text-center">Sample Contract</h5> -->
+            <!-- will remove h5 and message once the actual info is linked -->
+            <!-- Need to add a link to this document when document is available -->
+            <!-- <p>Coming Soon</p> -->
+            <a class="btn btn-success btn-block" type="button" href="sampleContract.docx">Contract</a>
+        </div>
+        <div class="col">
+            <!-- <h5 class="bg-warning text-center">Rates</h5> -->
+            <a class="btn btn-warning btn-block" type="button" href="23rates.docx">Rates</a>
+            <!-- use a table maybe, include daily/weekly/monthly
+            full and part time. Also drop in rates -->
+            <!-- Use an unborded table if using a table -->
+            <!-- use a button to match other options linking to a doc with info -->
+        </div>
+    </div>
+
+
+     
+
+    
+</body>
+</html>      

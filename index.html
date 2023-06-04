@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Using Bootstrap version 4.4.1 for this assignment,
+    used videos for week 9 to set up.-->
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <!-- Week 9 coding assignment, create a new website using HTML and Bootstrap.
+    Must include at lease 2 pages, Bootstrap: navbar, table and form. Bootstrap grid
+    must be used throughout to format elements. Elements must stack vertically when
+    the window is small.  -->
+</head>
+<body>
+        <!-- Used alert to verify that HTML was setup correctly.
+        Used a different statement on each page. -->
+    <!-- <div class="alert alert-primary" roles="alert">
+        It Works!!
+    </div> -->
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+
+    <!-- Setting up grid for page first. Didn't include the image, header or nav bar in the original
+    grid, created a second grid, might change and combine both together.-->
+    <!-- Do basic layout first and include EVERYTHING in the grid to start, easier to set up
+    then trying to make sure eveything moves correctly later. -->
+
+ 
+<div class="contianer-fluid">
+    <div class="row">
+        <div class="col">
+            <img src="medadvLearnersPNG.png "   class="img-fluid height:  alt="Adventure Learners logo, two dinosaurs">
+        </div>
+     </div>   
+    <div class="row">
+        <div class="col">
+           <h1 class="text-center text-success mb-4">Adventure Learners</h1> 
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <!-- Nav bar needs work, fixed issue. Had both links set as navbar-nav instead
+            of listing the second as a navbar-item wiht nav-link. Navigation bars now look
+            like I want them to.-->
+          <nav class="navbar navbar-expand-sm bg-light">
+        <a class="navbar-nav" href=index.html>Home</a>
+        <a class="navbar-item nav-link" href=more.html>Rates & Forms</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    </nav>  
+        </div>
+    </div>
+ </div>         
+    
+    
+<!-- 2nd Grid created to have 2 rows with 3 and 4 columns. -->
+    <div class="contianer-fluid border border-primary m-4">
+        <span class="border-primary">
+        <div class="row mb-5">
+            <div class="col">
+                <h4 class="text-warning">How we got started:</h4>
+                <p class="text-success">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut aliquam purus sit 
+                amet luctus venenatis. Dui sapien eget mi proin sed libero. Rutrum quisque 
+                non tellus orci. Facilisis magna etiam tempor orci eu lobortis elementum 
+                nibh tellus. A lacus vestibulum sed arcu non odio euismod. Gravida rutrum 
+                quisque non tellus orci ac auctor. Sed libero enim sed faucibus turpis in 
+                eu. Quam vulputate dignissim suspendisse in est ante. Hac habitasse platea 
+                dictumst quisque sagittis purus.
+                </p>                            
+            </div>
+            <div class="col-6">
+                <h4 class="text-danger">The owner/director</h4>
+                <p class="text-primary">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut aliquam purus sit 
+                amet luctus venenatis. Dui sapien eget mi proin sed libero. Rutrum quisque 
+                non tellus orci. Facilisis magna etiam tempor orci eu lobortis elementum 
+                nibh tellus. A lacus vestibulum sed arcu non odio euismod. Gravida rutrum 
+                quisque non tellus orci ac auctor. Sed libero enim sed faucibus turpis in 
+                eu. Quam vulputate dignissim suspendisse in est ante. Hac habitasse platea 
+                dictumst quisque sagittis purus.  
+                </p>   
+                <div class="text-center">
+                   <img src="rebeccaOwner3.JPG"  alt="Rebecca holding her son outside." class="img-fluid border border-dark rounded-lg">
+                </div>
+                </div>
+            <div class="col">
+                <h4 class="text-warning">Business goals</h4>
+                <p class="text-success">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut aliquam purus sit 
+                amet luctus venenatis. Dui sapien eget mi proin sed libero. Rutrum quisque 
+                non tellus orci. Facilisis magna etiam tempor orci eu lobortis elementum 
+                nibh tellus. A lacus vestibulum sed arcu non odio euismod. Gravida rutrum 
+                quisque non tellus orci ac auctor. Sed libero enim sed faucibus turpis in 
+                eu. Quam vulputate dignissim suspendisse in est ante. Hac habitasse platea 
+                dictumst quisque sagittis purus.
+                </p>
+            </div>
+        </div>
+        <div class="row mb-5">
+            <div class="col">
+                <h4 class="text-primary">Vision</h4>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut aliquam purus sit 
+                amet luctus venenatis. Dui sapien eget mi proin sed libero.
+            </div>
+            <div class="col">
+                <h4 class="text-success">Mission statement</h4>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut aliquam purus sit 
+                amet luctus venenatis. Dui sapien eget mi proin sed libero.
+            </div>
+            <div class="col">
+                <h4 class="text-warning">Beliefs</h4>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut aliquam purus sit 
+                amet luctus venenatis. Dui sapien eget mi proin sed libero.
+            </div>
+            <div class="col">
+                <h4 class="text-danger">Goals for children and families</h4>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                tempor incididunt ut labore et dolore magna aliqua. Ut aliquam purus sit 
+                amet luctus venenatis. Dui sapien eget mi proin sed libero.
+            </div>
+        </span>
+        </div>
+    </div>
+    
+    <!-- Will use the form to request a tour/meet and greet. -->
+    
+    <div class="container">
+        <div class="row">
+            <div class="col">
+                    Want to schedule a visit? Please enter your email below,
+                    and we will contact you soon.   
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                <form>
+                    <div class="form-group">
+                    <label for="exampleFormControlInput1">Email address</label>
+                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+    </form>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    
+</div>
+
+</body>
+</html>
